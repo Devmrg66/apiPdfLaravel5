@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+			<html>
+				<head>
+					<meta charset='utf-8'>
+					<meta name='viewport' content='width=device-width, initial-scale=1'>
+					<title></title>
+					<style type='text/css' media='print'>
+						@page {
+                            margin-top: 30px;
+                        }
+                        * { padding: 0; margin: 0; }
+                        @font-face {
+                            font-family: "source_sans_proregular";           
+                            src: local("Source Sans Pro"), url("fonts/sourcesans/sourcesanspro-regular-webfont.ttf") format("truetype");
+                            font-weight: light;
+                            font-style: italic;
+                        }
+				
+						table.TablaPrincipal {
+							page-break-after: always;
+							font-family: sans-serif;
+							width: 98%;
+							position: sticky !important;
+							position: -webkit-sticky !important;
+							position: -moz-sticky !important;
+							position: -ms-sticky !important;
+						}
+				
+						/* Resto de estilos... */
+					</style>
+					<style>
+						body {
+							content: '';
+							display: block;
+							width: 100%;
+							height: 100%;
+							/* position: fixed;
+							top: 0;
+							left: 0; */
+							background-image: url(https://refis360movildev.s3.us-west-1.amazonaws.com/PlantillasImg/PlantillaPDF_1.png);
+							background-size: 100% 100%;
+							background-position: auto;
+							background-repeat: no-repeat;
+							opacity: 1;
+
+							-webkit-print-color-adjust: exact !important;
+							-moz-print-color-adjust: exact !important;
+							-ms-print-color-adjust: exact !important;
+							print-color-adjust: exact !important;
+						}
+					</style>
+				</head>
+				<body >
+					<style type='text/css' media='print'>
+						/* @page
+						{
+							size: letter portrait;
+							margin-right: 0.7m;
+							margin-left: 0.7m;
+						}
+
+						body
+						{
+							position: static;
+						}
+/* 
+						body:before
+						{
+							content: '';
+							display: block;
+							width: 100%;
+							height: 100%;
+							position: fixed;
+							top: 0;
+							left: 0;
+							background-image: url(https://refis360movildev.s3.us-west-1.amazonaws.com/PlantillasImg/PlantillaPDF_1.png);
+							background-size: 100% 100%;
+							background-position: auto;
+							background-repeat: no-repeat;
+							opacity: 1;
+
+							-webkit-print-color-adjust: exact !important;
+							-moz-print-color-adjust: exact !important;
+							-ms-print-color-adjust: exact !important;
+							print-color-adjust: exact !important;
+						} */
+						
+						table.TablaPrincipal 
+						{
+							page-break-after:always;
+							font-family: sans-serif;
+							width: 98%;
+							position: sticky !important;
+							position: -webkit-sticky !important;
+							position: -moz-sticky !important;
+							position: -ms-sticky !important;
+						} */
+						
+						thead.Cabecera
+						{
+							display:table-header-group;
+						}
+			
+						thead th.CeldaCabecera
+						{
+							padding-bottom: 15px;
+							text-align: left;
+						}
+						
+						thead th.CeldaCabecera div.header-info
+						{
+							margin-left: 25%;
+						}
+
+						tfoot.PiePagina
+						{
+							display:table-footer-group;
+							bottom: 0;
+							position: fixed;
+							width: 100%;
+							border-top: solid;
+						} 
+			
+						table.TablaPrincipal div.article
+						{
+							page-break-inside: avoid !important;
+						}
+
+						/* td.CeldaContenido
+						{
+						} */
+			
+						td.CeldaContenido div.main
+						{
+							font-size: 12pt;
+							text-align: justify;
+						}
+			
+						td.CeldaContenido div.main p
+						{
+							font-size: 9pt;
+						}
+			
+						.TablaDetallesEntrada
+						{
+							width: 100%;
+							text-align: left;
+							font-size: 10pt;
+						}
+			
+						.TablaDetallesMercancias
+						{
+							page-break-inside: avoid;
+							margin-top: 10px;
+							border-collapse: collapse;
+						}
+			
+						.DetalleMercancia
+						{
+							font-size: 7pt;
+						}
+			
+						table.TablaDetallesMercancias tbody tr
+						{
+							page-break-inside: avoid !important;
+						}
+
+						table.TablaDetallesMercancias thead tr th
+						{
+							font-size: 8pt;
+							text-align: center;
+						}
+					</style>
+			
+					<table class='TablaPrincipal'>
+						<thead class='Cabecera'>
+							<tr>
+								<th class='CeldaCabecera' width='700' colspan='2'>
+									<div class='header-info'>
+										Refis360 Móvil
+									</div>
+								</th>
+							</tr>
+							<tr>
+								<th class='CeldaCabecera' width='700' colspan='2'>
+									<div class='header-info'>
+										Comercializadora La Junta S.A. de C.V.
+									</div>
+								</th>
+							</tr>
+							<tr>
+								<th class='CeldaCabecera' style='text-align: center;' width='700' colspan='2'>
+									<div class='header-info'>
+										Detalles de Carga
+									</div>
+								</th>
+							</tr>
+						</thead>
+						<tfoot class='PiePagina'>
+							<tr>
+								<td class='CeldaPiePagina' colspan='2'>
+									<div class='footer-info'>
+										Comercializadora la Junta, S.A. de C.V., Todos los Derechos Reservados
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+						<tbody class='report-content'>
+							<tr>
+								<td class='CeldaContenido' colspan='2'>
+									<div class='main'>
+										<table class='TablaDetallesEntrada'>
+											<tr>
+												<td><strong>Entrada</strong></td>
+												<td style='color : red;'>asasd</td>
+												<td><strong>Referencia</strong></td>
+												<td>asasd</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td><strong>Recinto Destino</strong></td>
+												<td>asasd</td>
+												<td><strong>&Aacute;rea</strong></td>
+												<td>asasd</td>
+												<td><strong>Fecha de Entrada</strong></td>
+												<td>saasdadsasd</td>
+											</tr>
+											<tr>
+												<td><strong>Buque</strong></td>
+												<td>asasd</td>
+												<td><strong>Viaje</strong></td>
+												<td>asasd</td>
+												<td><strong>Fecha de Arribo</strong></td>
+												<td>saasdadsasd</td>
+											</tr>
+											<tr>
+												<td><strong>Puerto de Procedencia</strong></td>
+												<td>asasd</td>
+												<td><strong>L&iacute;nea Naviera</strong></td>
+												<td>asasd</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td><strong>Patente</strong></td>
+												<td>asasd</td>
+												<td><strong>Agencia Aduanal</strong></td>
+												<td>asasd</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td><strong>Manifiesto</strong></td>
+												<td>asasd</td>
+												<td><strong>BL</strong></td>
+												<td>asasd</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td><strong>Contenedor</strong></td>
+												<td>asasd</td>
+												<td><strong>Sello</strong></td>
+												<td>asasd</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class='CeldaContenido' colspan='2'>
+									<div class='main'>
+										<table class="TablaDetallesMercancias">
+                                            <thead style="border-bottom: 2px solid;">
+                                                <tr>
+                                                    <th>Entrada</th>
+                                                    <th>HBL</th>
+                                                    <th>Marca</th>
+                                                    <th>Mercancia</th>
+                                                    <th>Embalaje</th>
+                                                    <th>Bultos</th>
+                                                    <th>Peso</th>
+                                                    <th>Volumen</th>
+                                                    <th>Faltan</th>
+                                                    <th>Sobran</th>
+                                                    <th>Averiados</th>
+                                                    <th>UN</th>
+                                                    <th>IMDG</th>
+                                                    <th>SGA</th>
+                                                    <th>Obs.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach($datos as $detalle)
+                                                <tr class="DetalleMercancia">
+                                                    <td>{{ $detalle['Entrada'] }}</td>
+                                                    <td>{{ $detalle['HBL'] }}</td>
+                                                    <td>{{ $detalle['Marca'] }}</td>
+                                                    <td>{{ $detalle['Mercancia'] }}</td>
+                                                    <td>{{ $detalle['Embalaje'] }}</td>
+                                                    <td>{{ $detalle['Bultos'] }}</td>
+                                                    <td>{{ $detalle['Peso'] }}</td>
+                                                    <td>{{ $detalle['Volumen'] }}</td>
+                                                    <td>{{ $detalle['Faltan'] }}</td>
+                                                    <td>{{ $detalle['Sobran'] }}</td>
+                                                    <td>{{ $detalle['Averiados'] }}</td>
+                                                    <td>{{ $detalle['UN'] }}</td>
+                                                    <td>{{ $detalle['IMDG'] }}</td>
+                                                    <td>{{ $detalle['SGA'] }}</td>
+                                                    <td>{{ $detalle['Obs'] }}</td>
+                                                </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+									</div>
+								</td>
+							</tr>
+			
+							<tr>
+								<td class='CeldaContenido' nowrap style='word-wrap: break-word; word-break: break-all;'>
+									<div class='main'>
+										<p>
+											<strong>Nota Importante:</strong>
+										</p>
+									</div>
+								</td>
+								<td class='CeldaContenido'>
+									<div class='main'>
+										<p>
+											Les pedimos realizar el examen previo de las mercancías amparadas en el presente documento de conformidad con lo establecido en los art. 25 y 42 de la Ley Aduanera vigente, antes de efectuar el despacho de aduanal de estas mercancías TAP LA JUNTA SA DE CV se deslinda de cualquier responsabilidad derivada de las diferencias en las clases, tipo, cantidad, pesos y medidas de mercancías depositados en el recinto fiscalizado y/o amparada con la presente liberación.
+										</p>
+										<p>
+											*Clasificación de Averías: <strong>A</strong> – Daño solo embalaje; <strong>B</strong> – Daño a embalaje y posible daño de mercancía; <strong>C</strong> – Daño a embalaje y mercancía.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</body>
+			</html>
