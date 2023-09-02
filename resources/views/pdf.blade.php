@@ -6,6 +6,7 @@
     <style type="text/css">
         @page {
             margin-top: 30px;
+            max: height 800px;
         }
         * { padding: 0; margin: 0; }
         @font-face {
@@ -76,6 +77,7 @@
             margin-top: 10px;
             width: 112%;
             border-collapse: collapse; 
+            max-height: 90%
             /* table-layout: fixed;  */
         } 
 
@@ -121,12 +123,12 @@
     </style>
 </head>
 <body >
-    <div class="header-info"> Refis360 Móvil </div>
-    <div class="header-info"> Comercializadora La Junta S.A. de C.V. </div>
+    <!-- <div class="header-info"> Refis360 Móvil </div>
+    <div class="header-info"> Comercializadora La Junta S.A. de C.V. </div> -->
     <br>
-    <div style="text-align: center; font-size: 10pt;"><strong>Detalles de Carga</strong></div>
+    <div style="text-align: center; font-size: 10pt;padding-top: 40px;"><strong>Detalles de Carga</strong></div>
     
-    <div class='main'>
+    <div class='main' style="page-break-after:always;">
         <table class='TablaDetallesEntrada'>
             <tr>
                 <td class="titulo"><strong>Entrada</strong></td>
@@ -178,8 +180,8 @@
         </table>
     </div>
 
-    <div class="main">
-        <table class="TablaDetallesMercancias">
+    <div class="main" >
+        <table class="TablaDetallesMercancias" style="padding-top: 80px">
             <thead style="border-bottom: 2px solid;">
                 <tr>
                     <th>Entrada</th>
@@ -247,7 +249,7 @@
             </tr>
         </table>
     </div>
-
-    <div class="footer-info"> Comercializadora la Junta, S.A. de C.V., Todos los Derechos Reservados </div>
+<!-- 
+    <div class="footer-info"> Comercializadora la Junta, S.A. de C.V., Todos los Derechos Reservados </div> -->
 </body>
 </html>
