@@ -1516,18 +1516,8 @@ class PdfController extends Controller
             $pdf->text(165, 823, "Comercializadora la Junta, S.A. de C.V., Todos los Derechos Reservados", $font, 8, array(0,0,0));
             $pdf->text(140, 25, "Refis360 Móvil", $font, 10, array(0,0,0));
             $pdf->text(140, 45, "Comercializadora la Junta, S.A. de C.V.", $font, 10, array(0,0,0));
-            
-            if ($PAGE_NUM == 1) {
-                $path2 = url(\'https://refis360.s3.amazonaws.com/resources/Removal-577.png\');
-                $type2 = pathinfo($path2, PATHINFO_EXTENSION);
-                $data2 = file_get_contents($path2);
-                $base64 = \'data:image/\' . $type2 . \';base64,\' . base64_encode($data2);
-                $pdf->set_opacity(.8);
-                $pdf->image($base64, 400, 130, 205, 170);
-            }
         ');
-
-        return $pdf->stream('result.pdf');
-
+            
+            return $pdf->stream('result.pdf');
     }
 }

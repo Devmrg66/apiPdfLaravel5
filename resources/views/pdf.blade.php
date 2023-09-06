@@ -139,11 +139,28 @@
         .encabezado-pagina-adicional {
             margin-top: 30px; /* Ajusta la cantidad de espacio según tus necesidades */
         }
+
+        #sello {
+            margin-top: -80px !important;
+            position: absolute;
+            top:   170px;
+            left:  500px;
+            /** The width and height may change 
+                according to the dimensions of your letterhead
+            **/
+            width:    215px;
+            height:   170px;
+            
+        }
     </style>
 </head>
 <body >
     <div id="watermark">
         <img src="https://refis360movildev.s3.us-west-1.amazonaws.com/PlantillasImg/PlantillaPDF_1.png" height="100%" width="100%" />
+    </div>
+
+    <div id="sello">
+        <img src="https://refis360.s3.amazonaws.com/resources/Removal-577.png" height="100%" width="100%" />
     </div>
 
     <div style="text-align: center; font-size: 10pt;"><strong>Detalles de Carga</strong></div>
